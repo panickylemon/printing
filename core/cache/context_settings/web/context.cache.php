@@ -18,16 +18,21 @@
     'services/print-books' => 20,
     'services/binding/' => 21,
     'services/foil-stamping/' => 14,
-    'services/listovki' => 10,
-    'services/blanki/' => 9,
-    'services/blanki/blanki-strogoj-otchetnosti' => 11,
-    'services/blanki/blanki-pisem' => 12,
-    'services/blanki/firmennyie-blanki' => 13,
-    'services/foil-stamping/goryachee-tisnenie-folgoj' => 15,
+    'services/print-booklets' => 26,
+    'services/printing-of-leaflets' => 10,
+    'services/forms/' => 9,
+    'services/making-calendars/' => 27,
+    'services/trudovye-knizhki' => 29,
+    'services/diploma' => 30,
+    'services/forms/bso' => 11,
+    'services/forms/letters' => 12,
+    'services/forms/brand' => 13,
+    'services/foil-stamping/tisnenie-folgoi' => 15,
     'services/foil-stamping/blintovoe-tisnenie' => 16,
     'services/binding/study-docs' => 22,
     'services/binding/screpleniya' => 23,
     'services/binding/vidy-perepletov' => 24,
+    'services/making-calendars/calendars-trio' => 28,
   ),
   'resourceMap' => 
   array (
@@ -50,8 +55,12 @@
       3 => 20,
       4 => 21,
       5 => 14,
-      6 => 10,
-      7 => 9,
+      6 => 26,
+      7 => 10,
+      8 => 9,
+      9 => 27,
+      10 => 29,
+      11 => 30,
     ),
     9 => 
     array (
@@ -69,6 +78,10 @@
       0 => 22,
       1 => 23,
       2 => 24,
+    ),
+    27 => 
+    array (
+      0 => 28,
     ),
   ),
   'webLinkMap' => 

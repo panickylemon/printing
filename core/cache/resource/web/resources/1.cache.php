@@ -6,7 +6,7 @@
     'type' => 'document',
     'contentType' => 'text/html',
     'pagetitle' => 'Главная',
-    'longtitle' => 'Поздравляем!',
+    'longtitle' => 'Типография СПб',
     'description' => '',
     'alias' => 'index',
     'link_attributes' => '',
@@ -36,7 +36,7 @@
     'createdby' => 1,
     'createdon' => 1481471303,
     'editedby' => 1,
-    'editedon' => 1481994874,
+    'editedon' => 1482001781,
     'deleted' => 0,
     'deletedon' => 0,
     'deletedby' => 0,
@@ -59,18 +59,27 @@
     'ws.images' => 
     array (
       0 => 'ws.images',
-      1 => '[{"MIGX_id":"1","set":"111","description":"111","image":"assets/templates/print-template/image/work/file39.JPG"}]',
+      1 => '[{"MIGX_id":"4","set":"","description":"","image":"assets/templates/print-template/image/work/file22.JPG"},{"MIGX_id":"5","set":"","description":"","image":"assets/templates/print-template/image/work/file27.JPG"},{"MIGX_id":"6","set":"","description":"","image":"assets/templates/print-template/image/work/file28.JPG"},{"MIGX_id":"7","set":"","description":"","image":"assets/templates/print-template/image/work/file39.JPG"},{"MIGX_id":"8","set":"","description":"","image":"assets/templates/print-template/image/work/file41.JPG"},{"MIGX_id":"9","set":"","description":"","image":"assets/templates/print-template/image/work/file42.JPG"},{"MIGX_id":"10","set":"","description":"","image":"assets/templates/print-template/image/work/file46.JPG"}]',
       2 => 'default',
       3 => NULL,
       4 => 'migx',
+    ),
+    'seoKeywords' => 
+    array (
+      0 => 'seoKeywords',
+      1 => '',
+      2 => 'default',
+      3 => NULL,
+      4 => 'text',
     ),
     '_content' => '<!DOCTYPE html>
 <html lang="ru">
     <head>
 	<meta charset="UTF-8">
-	<title>Типография Литография Принт</title>
-	<meta name="keywords" content="[[*key]]" />
-        <meta name="description" content="[[*des]]" />
+	<title>Типография СПб</title>
+    <meta name="description" content=""/>
+	<meta name="keywords" content="" />
+       
 	<meta name="viewport" content="width=device-width, initial-scale=1">
         <base href="[(site_url)]" />
 	<link rel="icon" href="favicon.ico" type="/printing/assets/templates/print-template/image/vnd.microsoft.icon">
@@ -332,7 +341,7 @@
 			
 				<div class="l-work-carousel clearfix">
 					<div class="b-work-carousel owl-carousel">
-                        <div><img class="b-work-carousel__item" alt="111" src="assets/templates/print-template/image/work/file39.JPG"></div>
+                        <div><img class="b-work-carousel__item" alt="" src="assets/templates/print-template/image/work/file22.JPG"></div><div><img class="b-work-carousel__item" alt="" src="assets/templates/print-template/image/work/file27.JPG"></div><div><img class="b-work-carousel__item" alt="" src="assets/templates/print-template/image/work/file28.JPG"></div><div><img class="b-work-carousel__item" alt="" src="assets/templates/print-template/image/work/file39.JPG"></div><div><img class="b-work-carousel__item" alt="" src="assets/templates/print-template/image/work/file41.JPG"></div><div><img class="b-work-carousel__item" alt="" src="assets/templates/print-template/image/work/file42.JPG"></div><div><img class="b-work-carousel__item" alt="" src="assets/templates/print-template/image/work/file46.JPG"></div>
     				</div>
 				</div>
 			</div>
@@ -391,9 +400,10 @@
   array (
     '[[$head]]' => '<head>
 	<meta charset="UTF-8">
-	<title>Типография Литография Принт</title>
-	<meta name="keywords" content="[[*key]]" />
-        <meta name="description" content="[[*des]]" />
+	<title>Типография СПб</title>
+    <meta name="description" content=""/>
+	<meta name="keywords" content="" />
+       
 	<meta name="viewport" content="width=device-width, initial-scale=1">
         <base href="[(site_url)]" />
 	<link rel="icon" href="favicon.ico" type="/printing/assets/templates/print-template/image/vnd.microsoft.icon">
@@ -453,7 +463,7 @@
 	</header>',
     '[[getImageList? 
                         &tvname=`ws.images`
-                        &tpl=`images.gallery.tpl`]]' => '<div><img class="b-work-carousel__item" alt="111" src="assets/templates/print-template/image/work/file39.JPG"></div>',
+                        &tpl=`images.gallery.tpl`]]' => '<div><img class="b-work-carousel__item" alt="" src="assets/templates/print-template/image/work/file22.JPG"></div><div><img class="b-work-carousel__item" alt="" src="assets/templates/print-template/image/work/file27.JPG"></div><div><img class="b-work-carousel__item" alt="" src="assets/templates/print-template/image/work/file28.JPG"></div><div><img class="b-work-carousel__item" alt="" src="assets/templates/print-template/image/work/file39.JPG"></div><div><img class="b-work-carousel__item" alt="" src="assets/templates/print-template/image/work/file41.JPG"></div><div><img class="b-work-carousel__item" alt="" src="assets/templates/print-template/image/work/file42.JPG"></div><div><img class="b-work-carousel__item" alt="" src="assets/templates/print-template/image/work/file46.JPG"></div>',
     '[[$footer]]' => '<footer>
 	<div class="l-container">
 		<div class="clearfix">
@@ -500,9 +510,10 @@
           'cache_type' => 0,
           'snippet' => '<head>
 	<meta charset="UTF-8">
-	<title>[[++site_name]]</title>
-	<meta name="keywords" content="[[*key]]" />
-        <meta name="description" content="[[*des]]" />
+	<title>[[*longtitle:is=``:then=`[[*pagetitle]]`:else=`[[*longtitle]]`]]</title>
+    <meta name="description" content="[[*description]]"/>
+	<meta name="keywords" content="[[*seoKeywords]]" />
+       
 	<meta name="viewport" content="width=device-width, initial-scale=1">
         <base href="[(site_url)]" />
 	<link rel="icon" href="favicon.ico" type="/printing/assets/templates/print-template/image/vnd.microsoft.icon">
@@ -525,9 +536,10 @@
           'static_file' => '',
           'content' => '<head>
 	<meta charset="UTF-8">
-	<title>[[++site_name]]</title>
-	<meta name="keywords" content="[[*key]]" />
-        <meta name="description" content="[[*des]]" />
+	<title>[[*longtitle:is=``:then=`[[*pagetitle]]`:else=`[[*longtitle]]`]]</title>
+    <meta name="description" content="[[*description]]"/>
+	<meta name="keywords" content="[[*seoKeywords]]" />
+       
 	<meta name="viewport" content="width=device-width, initial-scale=1">
         <base href="[(site_url)]" />
 	<link rel="icon" href="favicon.ico" type="/printing/assets/templates/print-template/image/vnd.microsoft.icon">
@@ -2460,6 +2472,57 @@ if ($wf->_config[\'ph\']) {
     ),
     'modTemplateVar' => 
     array (
+      'seoKeywords' => 
+      array (
+        'fields' => 
+        array (
+          'id' => 3,
+          'source' => 1,
+          'property_preprocess' => false,
+          'type' => 'text',
+          'name' => 'seoKeywords',
+          'caption' => '',
+          'description' => '',
+          'editor_type' => 0,
+          'category' => 15,
+          'locked' => false,
+          'elements' => '',
+          'rank' => 0,
+          'display' => 'default',
+          'default_text' => '',
+          'properties' => 
+          array (
+          ),
+          'input_properties' => 
+          array (
+            'allowBlank' => 'true',
+            'maxLength' => '',
+            'minLength' => '',
+            'regex' => '',
+            'regexText' => '',
+          ),
+          'output_properties' => 
+          array (
+          ),
+          'static' => false,
+          'static_file' => '',
+          'content' => '',
+        ),
+        'policies' => 
+        array (
+        ),
+        'source' => 
+        array (
+          'id' => 1,
+          'name' => 'Filesystem',
+          'description' => '',
+          'class_key' => 'sources.modFileMediaSource',
+          'properties' => 
+          array (
+          ),
+          'is_stream' => true,
+        ),
+      ),
     ),
   ),
 );
